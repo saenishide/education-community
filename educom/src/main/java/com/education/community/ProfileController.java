@@ -27,6 +27,7 @@ public class ProfileController {
 		model.addAttribute("userData", userData);
 		model.addAttribute("userProfileData", userProfileData);
 		model.addAttribute("interestList", interestList);
+
 	    return "profile";
 	}
 }
