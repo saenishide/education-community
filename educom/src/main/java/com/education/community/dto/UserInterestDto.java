@@ -1,6 +1,6 @@
 package com.education.community.dto;
 
-import java.time.LocalDateTime;
+import java.sql.Timestamp;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,5 +11,5 @@ public class UserInterestDto {
 
 	private String userId;
 	private String interestCd;
-	private LocalDateTime registDate;
+	private Timestamp registDate;
 }

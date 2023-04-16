@@ -12,19 +12,19 @@
 </head>
 <body class="body">
 <div class="center">
-	<span th:text="${userData.userId}"></span>
-	<span th:text="${userData.userName}"></span>
-	<span th:text="${userData.lastLoginDate}"></span>
-	<span th:text="${userData.registDate}"></span>
-	<span th:text="${userProfileData.iconImageFileName}"></span>
-	<span th:text="${userProfileData.statusCd}"></span>
-	<span th:text="${userProfileData.histNum}"></span>
-	<span th:text="${userProfileData.favoriteSubjectCd}"></span>
-	<span th:text="${userProfileData.other}"></span>
-	<span th:text="${userProfileData.updateDate}"></span>
+	<div th:text="${userData.userId}"></div>
+	<div th:text="${userData.userName}"></div>
+	<div th:text="${userData.lastLoginDate}"></div>
+	<div th:text="${userData.registDate}"></div>
+	<div th:text="${userProfileData.iconImageFileName}"></div>
+	<div th:text="${userProfileData.statusCd}"></div>
+	<div th:text="${userProfileData.histNum}"></div>
+	<div th:text="${userProfileData.favoriteSubjectCd}"></div>
+	<div th:text="${userProfileData.other}"></div>
+	<div th:text="${userProfileData.updateDate}"></div>
 </div>
 <div class="center" th:each="list : ${interestList}">
-	<span th:text="${list.interestCd}"></span>
+	<div th:text="${list.interestCd}"></div>
 </div>
 </body>
 </html>

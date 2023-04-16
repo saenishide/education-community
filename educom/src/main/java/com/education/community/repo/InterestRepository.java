@@ -8,7 +8,6 @@ import java.util.Map;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.education.community.dto.CommentDto;
 import com.education.community.dto.InterestDto;
 
 import lombok.RequiredArgsConstructor;

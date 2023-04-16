@@ -1,6 +1,6 @@
 package com.education.community.dto;
 
-import java.time.LocalDateTime;
+import java.sql.Timestamp;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,10 +12,10 @@ public class UserProfileDto {
 	private String userId;
 	private String iconImageFileName;
 	private String statusCd;
-	private int histNum;
+	private Long histNum;
 	private String favoriteSubjectCd;
 	private String other;
-	private LocalDateTime registDate;
-	private LocalDateTime updateDate;
+	private Timestamp registDate;
+	private Timestamp updateDate;
 
 }
