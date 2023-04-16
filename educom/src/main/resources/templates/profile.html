@@ -11,6 +11,20 @@
     <title>top</title>
 </head>
 <body class="body">
-<div class="center"><span th:text="${page}"></span></div>
+<div class="center">
+	<span th:text="${userData.userId}"></span>
+	<span th:text="${userData.userName}"></span>
+	<span th:text="${userData.lastLoginDate}"></span>
+	<span th:text="${userData.registDate}"></span>
+	<span th:text="${userProfileData.iconImageFileName}"></span>
+	<span th:text="${userProfileData.statusCd}"></span>
+	<span th:text="${userProfileData.histNum}"></span>
+	<span th:text="${userProfileData.favoriteSubjectCd}"></span>
+	<span th:text="${userProfileData.other}"></span>
+	<span th:text="${userProfileData.updateDate}"></span>
+</div>
+<div class="center" th:each="list : ${interestList}">
+	<span th:text="${list.interestCd}"></span>
+</div>
 </body>
 </html>
